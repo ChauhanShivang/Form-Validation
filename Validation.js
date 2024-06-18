@@ -13,23 +13,23 @@ function Validate()
     var Vpin = /^\d{6}$/;
 
     if(!Vname.test(Name)){
-        alert("Please Enter Valid Name");
+        document.getElementById("ename").innerHTML = "*Invalid Name";
         return false;
     }
     if(!Vsurname.test(Surname)){
-        alert("Please Enter Valid Surname");
+        document.getElementById("esurname").innerHTML = "*Invalid Surname";
         return false;
     }
     if(!Vemail.test(Email)){
-        alert("Please Enter Valid Email");
+        document.getElementById("eemail").innerHTML = "*Invalid Email";
         return false;
     }
     if(!Vmobile.test(Mobile)){
-        alert("Please Enter Valid Mobile Number");
+        document.getElementById("emobile").innerHTML = "*Invalid Mobile No.";
         return false;
     }
     if(!Vpin.test(Pin)){
-        alert("Please Enter Valid Pin Code");
+        document.getElementById("epin").innerHTML = "*Invalid Pin Code";
         return false;
     }
     return true;
